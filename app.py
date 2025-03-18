@@ -29,7 +29,7 @@ logging.getLogger("langchain").setLevel(logging.WARNING)
 qa_logger = logging.getLogger("qa_logger")
 qa_logger.setLevel(logging.INFO)
 if not qa_logger.handlers:
-    qa_file_handler = logging.FileHandler("/home/shtlp_0132/Desktop/Work/RAG_Project/qa_interactions.log", mode='a')
+    qa_file_handler = logging.FileHandler("/home/shtlp_0132/Desktop/Work/RAG_Project/RAG_Project/qa_interactions.log", mode='a')
     qa_file_formatter = logging.Formatter("%(asctime)s - QUESTION: %(message)s | ANSWER: %(message)s")
     qa_file_handler.setFormatter(qa_file_formatter)
     qa_logger.addHandler(qa_file_handler)
